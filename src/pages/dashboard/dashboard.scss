@@ -1,0 +1,12 @@
+.dashboard {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.charts {
+  display:flex;
+  justify-content: space-around;
+}

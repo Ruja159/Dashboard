@@ -1,0 +1,30 @@
+.card {
+  width: 30%;
+  height: 200px;
+  transition: 1s;
+  overflow: hidden;
+  &.collapsed{
+    height: 20px;
+    transition: 1s;
+    .button{
+      svg {
+        transform: rotate(180deg);
+        transition: 1s;
+      }
+    }
+  }
+  .button {
+    color: $gray-color;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    display: flex;
+    align-items: center;
+      svg {
+        transform: rotate(0);
+        transition: 1s;
+      }
+  }
+}

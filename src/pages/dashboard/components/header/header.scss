@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .title {
+    h2 {
+      font-weight: bold;
+    }
+  }
+}

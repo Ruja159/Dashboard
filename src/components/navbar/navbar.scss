@@ -1,0 +1,45 @@
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+  background: $secondary-color;
+}
+
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: $secondary-color;
+}
+
+.ant-menu-dark .ant-menu-item, .ant-menu-dark .ant-menu-item-group-title, .ant-menu-dark .ant-menu-item > a, .ant-menu-dark .ant-menu-item > span > a {
+  color: $gray-color;
+  font-size: 14px;
+}
+
+.ant-menu-dark  {
+  .ant-menu-item-selected .ant-menu-item-icon + span, .ant-menu-dark .ant-menu-item-selected .anticon + span {
+    color: $primary-color;
+  }
+}
+
+.ant-menu-dark  {
+  .ant-menu-item-selected {
+    .ant-menu-item-icon, .ant-menu-dark .ant-menu-item-selected .anticon {
+      color: $primary-color;
+    }
+  }
+}
+
+.ant-btn-primary {
+  background: $primary-color;
+  border-color: $primary-color;
+
+  &:hover, &:focus {
+    background: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.ant-menu-dark {
+  .ant-menu-item-selected > span > a {
+    color: $primary-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
