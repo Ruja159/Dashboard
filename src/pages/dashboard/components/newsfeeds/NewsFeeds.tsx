@@ -18,11 +18,16 @@ const NewsFeeds = () => {
     return (
        <Card>
            <div>
-               <IoNotificationsCircle />
+               <h6>What's New</h6>
                {data.map((item: any)=> {
                    return(
-                       <div>
-                           {item.feed}
+                       <div className="feeds-container">
+                           <div>
+                               <IoNotificationsCircle />
+                           </div>
+                           <div>
+                               {item.feed}
+                           </div>
                        </div>
                    )
                })}

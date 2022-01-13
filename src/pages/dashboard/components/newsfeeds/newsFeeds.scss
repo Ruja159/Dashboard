@@ -1,0 +1,10 @@
+.feeds-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
