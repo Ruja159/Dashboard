@@ -1,0 +1,21 @@
+.action-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.action-list-price {
+  display: flex;
+  gap: 10px;
+}
+
+.link-button {
+  height: 20px!important;
+  font-size: 10px!important;
+}
+.button-container {
+  justify-content: right;
+  display: flex;
+}

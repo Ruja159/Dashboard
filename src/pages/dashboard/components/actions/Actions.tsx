@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import actionsData from '../../../../jsonData/actionsData.json'
 import {Card} from "antd";
 import {Button} from "react-bootstrap"
+import CustomButton from "../../../../components/button/CustomButton";
 
 const Actions = () => {
     const [podaci, setPodaci] = useState([{name:"", due: "", price:""}]);
@@ -17,21 +18,45 @@ const Actions = () => {
     return (
         <Card>
             <div>
-                <h3>Actions</h3>
-                <h4>Approve payments</h4>
+                <h5>Actions</h5>
+                <h6>Approve payments</h6>
                 <div>
                     {podaci.map((item: any) => {
                        return(
-                           <>
-                               {item.name}
-                               {item.due}
-                               {item.price}
-                           </>
+                           <div className ="action-list">
+                               <div>
+                                   <div>
+                                       {item.name}
+                                   </div>
+                                   <div className="action-list-price">
+                                       <span>
+                                            {item.due}
+                                       </span>
+                                       <span>
+                                            {item.price}
+                                       </span>
+                                   </div>
+                               </div>
+                               <div>
+                                   <CustomButton 
+                                       children = "Approve" 
+                                       height="30px"
+                                       width="auto" 
+                                       onClick={()=>{console.log("ADSFDGH")}}
+                                       radius= "10px"
+                                       padding = "10px"
+                                       margin = "auto"
+                                   />
+                               </div>
+                           </div>
+
                        )
-                    })})
+                    })}
                 </div>
             </div>
-             <Button variant="link">View all</Button>
+            <div className="button-container">
+                <Button variant="link" className="link-button">View all</Button>
+            </div>
             </Card>
     )
 }

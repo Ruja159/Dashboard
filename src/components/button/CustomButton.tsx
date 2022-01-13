@@ -7,7 +7,9 @@ interface Props {
     onClick: () => void;
     radius: string
     width: string;
-    rightLeftArrow?: boolean
+    rightLeftArrow?: boolean;
+    padding?: string;
+    margin?: string
 
 }
 
@@ -16,7 +18,9 @@ const Button: React.FC<Props> = ({
                                      height,
                                      onClick,
                                      radius,
+                                     margin,
                                      width,
+                                     padding ,
                                      rightLeftArrow
                                  }) => {
     return (
@@ -27,7 +31,9 @@ const Button: React.FC<Props> = ({
                 style={{
                     borderRadius: radius,
                     height,
-                    width
+                    width,
+                    padding,
+                    margin
                 }}
             >
                 {children}

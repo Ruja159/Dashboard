@@ -1,24 +1,22 @@
-import React from 'react';
+import React, { useState} from 'react';
 import Notification from "../notifications/Notification";
 import {Card} from "antd";
 
-interface Props {
-    name: string,
-    profile_picture: any
-}
+const Profile = () => {
 
-const Profile: React.FC<Props> = ({name, profile_picture}) => {
-
+    const [data,setData] = useState({profile_name: "Aleksandar Rujevic", img:"https://jejuhydrofarms.com/wp-content/uploads/2020/05/blank-profile-picture-973460_1280.png"})
 
     return (
-        <Card>
-            <div>
-                {name}
-                <Notification />
+        <Card className="card-profile">
+            <div className="card-profile-name">
+                <div>
+                    {data.profile_name}
+                </div>
             </div>
-            <div>
-                {profile_picture}
-            </div>
+                <div className="notification">
+                    <Notification/>
+                </div>
+            <img src= {data.img} className="profile-img"/>
         </Card>
     )
 }
