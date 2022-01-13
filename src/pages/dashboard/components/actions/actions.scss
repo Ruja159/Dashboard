@@ -1,3 +1,4 @@
+@import '../../../../assets/scss/variables';
 .action-list {
   display: flex;
   justify-content: center;
@@ -12,10 +13,18 @@
 }
 
 .link-button {
-  height: 20px!important;
-  font-size: 10px!important;
+  height: 25px!important;
+  font-size: 13px!important;
+  font-weight: bold !important;
 }
 .button-container {
   justify-content: right;
   display: flex;
+}
+.action-list-name{
+  font-weight: bold;
+}
+.btn-link {
+  text-decoration: none!important;
+  color: $primary-color!important;
 }

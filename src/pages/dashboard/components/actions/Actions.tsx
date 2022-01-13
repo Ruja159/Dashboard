@@ -25,7 +25,7 @@ const Actions = () => {
                        return(
                            <div className ="action-list">
                                <div>
-                                   <div>
+                                   <div className="action-list-name">
                                        {item.name}
                                    </div>
                                    <div className="action-list-price">

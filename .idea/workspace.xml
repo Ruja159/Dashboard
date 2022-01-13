@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f1eaa8b-2812-4c9b-bf37-a199cc6caaa2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/jsonData/newsFeeds.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsonData/profileData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/actions/actions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/newsfeeds/NewsFeeds.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/profile/profile.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/outstanding_receipt/outstandingReceipt.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/CustomButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/CustomButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jsonData/outstandingReceipt.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsonData/outstandingReceipt.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/actions/Actions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/actions/Actions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/actions/actions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/actions/actions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/outstanding_receipt/OutstandingReceipt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/outstanding_receipt/OutstandingReceipt.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +59,7 @@
       <workItem from="1640527141737" duration="1275000" />
       <workItem from="1640528450066" duration="14072000" />
       <workItem from="1641805113972" duration="20309000" />
-      <workItem from="1641975813437" duration="35013000" />
+      <workItem from="1641975813437" duration="36910000" />
     </task>
     <servers />
   </component>
