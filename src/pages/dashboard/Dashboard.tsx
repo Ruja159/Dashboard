@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Sidebar from "../../components/sidebar/Sidebar";
 import Header from "./components/header/Header";
 import {IncomeSpentChart} from "./components/charts/IncomeSpentChart";
@@ -8,7 +8,15 @@ import {CustomCard} from "../../components/cards/CustomCard";
 import Button from "../../components/button/CustomButton";
 import DropDown from "../../components/dropdown/CustomDropdown";
 import {CustomDatePicker} from "../../components/pickers/DatePicker";
+import {AiFillCaretDown} from "react-icons/ai";
 const Dashboard: React.FC = () =>{
+
+    const [isCollapsed, setIsCollapsed] = useState(true)
+
+    const collapse = () => {
+        setIsCollapsed(!isCollapsed);
+    }
+
     return (
         <>
             <div className="dashboard">
@@ -27,8 +35,13 @@ const Dashboard: React.FC = () =>{
                         rightLeftArrow ={true}
                     />
                 </div>
-
-                <div className= "charts">
+                <div className="collapse-button-container">
+                    <button onClick={collapse} className ="collapse-button">
+                        Collapse All
+                        <AiFillCaretDown />
+                    </button>
+                </div>
+                <div className={`charts ${!isCollapsed ? "collapsed" : ""}`}>
                     <CustomCard custom = { <TotalBalanceChart />} isCollapsable = {true}/>
                     <CustomCard custom = { <IncomeSpentChart />}  isCollapsable = {true}/>
                     <CustomCard custom = { <SpendingByDepartment />}  isCollapsable = {true}/>

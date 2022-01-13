@@ -1,25 +1,33 @@
 .ant-card-bordered {
   border-radius: 20px
 }
-.card-profile .ant-card-body {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.card-profile-name {
-  display: flex;
-  gap: 20px;
-  font-weight: 500;
-  max-width: 40%;
-}
-.profile-img {
-  border-radius: 100px;
-  width: 40px;
-  height: auto
-}
-.notification {
-  svg {
-    height: 22px;
-    width: auto;
+.card-profile  {
+  .ant-card-body {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card-profile-name {
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+    max-width: 40%;
+  }
+
+  .profile-img {
+    border-radius: 100px;
+    width: 40px;
+    height: auto
+  }
+
+  .notification {
+    svg {
+      height: 22px;
+      width: auto;
+    }
   }
 }
+
+
