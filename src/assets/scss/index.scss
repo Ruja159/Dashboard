@@ -2,6 +2,11 @@
 @import './global';
 @import './src/components/navbar/navbar';
 @import './src/components/sidebar/sidebar';
-@import './src/pages/dashboard/dashboard';
+@import '../../pages/dashboard/Dashboard';
 @import './src/pages/payment/payment';
 @import './src/components/cards/customCard';
+@import './src/components/button/customButton';
+@import './src/components/dropdown/customDropdown';
+@import './src/pages/dashboard/components/header/header';
+@import './src/components/pickers/datePicker';
+

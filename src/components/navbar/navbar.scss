@@ -4,6 +4,11 @@
 
 .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
   background: $secondary-color;
+
+    border-right: 5px solid $primary-color;
+    //transform: scaleX(0);
+    //transition: transform 2s ease-in-out;
+
 }
 
 .ant-menu-dark .ant-menu-item, .ant-menu-dark .ant-menu-item-group-title, .ant-menu-dark .ant-menu-item > a, .ant-menu-dark .ant-menu-item > span > a {

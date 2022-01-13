@@ -1,0 +1,20 @@
+.dropdown-toggle{
+ background: transparent !important;
+  border: 1px solid $gray-color !important;
+  color: black !important;
+  margin-right: 10px !important;
+  border-radius: 10px !important;
+  display: flex!important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  font-weight: bold!important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.button-group {
+  display: flex;
+  margin: 20px 0;
+}

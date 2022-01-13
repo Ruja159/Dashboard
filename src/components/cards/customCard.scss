@@ -1,8 +1,9 @@
 .card {
-  width: 30%;
-  height: 200px;
+  //width: 30%;
+  height: 230px;
   transition: 1s;
   overflow: hidden;
+  //flew-grow:1;
   &.collapsed{
     height: 20px;
     transition: 1s;
@@ -14,6 +15,7 @@
     }
   }
   .button {
+    cursor: pointer;
     color: $gray-color;
     background: none;
     border: none;

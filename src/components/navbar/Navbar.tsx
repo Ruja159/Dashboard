@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
     const [collapsed, setCollapsed] = useState(false);
 
     return (
-        <div style={{ background: '#0b0d18', textAlign: 'center', height: '100vh'}}>
+        <div style={{ background: '#0b0d18', textAlign: 'center'}}>
             <img src={logo} alt="logo"/>
             <Menu
                 defaultSelectedKeys={['1']}

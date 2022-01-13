@@ -1,3 +1,6 @@
+@import './src/assets/scss/variables';
+
+
 .header {
   width: 100%;
   display: flex;
@@ -8,4 +11,26 @@
       font-weight: bold;
     }
   }
+}
+.search {
+  input {
+    width: 350px !important;
+    border-radius: 15px !important;
+    border-color: $gray-color !important;
+    background: $background-color !important;
+  }
+}
+
+.ant-input-affix-wrapper.ant-input-affix-wrapper-lg {
+  background: $background-color;
+  border-radius: 20px;
+  border-color: $gray-color;
+  &:focus,&:hover {
+    box-shadow: none !important;
+    border-color: $gray-color!important;
+  }
+}
+
+.form-control:focus {
+  box-shadow: none !important;
 }

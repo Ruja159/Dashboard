@@ -5,7 +5,7 @@ import { AiFillCaretDown } from "react-icons/ai";
 export const CustomCard = (props: any) => {
 
     const {
-       custom
+       custom,width,isCollapsable,height
     } = props
 
     const [isCollapsed, setIsCollapsed] = useState(true)
@@ -15,13 +15,19 @@ export const CustomCard = (props: any) => {
     }
 
     return (
-   <Card className={`card ${!isCollapsed ? "collapsed" : ""}`}>
-       <button onClick={collapse} className ="button">
-          collapse
-           <AiFillCaretDown />
-       </button>
-            <div className= "customComponents">{custom}
-       </div>
-   </Card>
+        isCollapsable ?
+               <Card className={`card ${!isCollapsed ? "collapsed" : ""}`} style={{width: width, borderRadius:"20px"}}>
+                   <button onClick={collapse} className ="button">
+                      collapse
+                       <AiFillCaretDown />
+                   </button>
+                        <div className= "customComponents">{custom}
+                   </div>
+               </Card> :
+            <div>
+               <Card  style={{width: width, borderRadius:"20px", height: height}}/>
+            </div>
+
+
     )
 }

@@ -1,4 +1,8 @@
 import './header.scss';
+import {BsSearch} from "react-icons/bs";
+import { Input } from "antd";
+
+
 
 const Header = () => {
     return (
@@ -9,7 +13,7 @@ const Header = () => {
             </div>
 
             <div className="search">
-                Search
+                <Input size="large" placeholder="Search" prefix={<BsSearch />} />
             </div>
         </div>
     )
