@@ -6,9 +6,21 @@
   flex-direction: column;
   //justify-content: space-between;
   background: $background-color;
+
+  &.payment{
+    gap: 15px
+  }
 }
 
 .card-sidebar{
   margin-bottom: 10px
+}
+.top-up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-top-up{
+  max-height: 78px
 }
 

@@ -7,7 +7,7 @@ const Payment: React.FC = () =>{
             <div className="payment">
                 Payment
             </div>
-            <Sidebar />
+            <Sidebar payment = {true}/>
         </>
     )
 }

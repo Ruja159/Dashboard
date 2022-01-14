@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f1eaa8b-2812-4c9b-bf37-a199cc6caaa2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/search/Search.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsonData/pendingActions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/suggested_top_up/suggestedTopUp.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/utility/Utility.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/utility/utility.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pickers/DatePicker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pickers/DatePicker.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pickers/datePicker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pickers/datePicker.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/actions/Actions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/actions/Actions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/payment/Payment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/payment/Payment.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +66,8 @@
       <workItem from="1640527141737" duration="1275000" />
       <workItem from="1640528450066" duration="14072000" />
       <workItem from="1641805113972" duration="20309000" />
-      <workItem from="1641975813437" duration="41034000" />
+      <workItem from="1641975813437" duration="42440000" />
+      <workItem from="1642089589744" duration="10914000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,43 @@
+@import './src/assets/scss/variables';
+
+.search-utility {
+  margin-bottom: 14px;
+  input {
+    border-radius: 15px !important;
+    border-color: $gray-color !important;
+    background: transparent !important;
+    font-size: 10px !important;
+  }
+  span {
+    border-radius: 20px;
+    background: transparent !important;
+
+  }
+  svg {
+    color: $primary-color
+
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    font-size: 10px;
+  }
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: $gray-color;
+  width: 30%;
+  border-radius: 12px;
+
+  svg {
+    width: 30px;
+    height: 40px;
+  }
+}

@@ -1,6 +1,7 @@
 import './header.scss';
 import {BsSearch} from "react-icons/bs";
 import { Input } from "antd";
+import Search from "../../../../components/search/Search";
 
 
 
@@ -13,7 +14,7 @@ const Header = () => {
             </div>
 
             <div className="search">
-                <Input size="large" placeholder="Search" prefix={<BsSearch />} />
+               <Search size="large" placeholder="Search"/>
             </div>
         </div>
     )

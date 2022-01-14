@@ -4,7 +4,9 @@ import {Card} from "antd";
 import {Button} from "react-bootstrap"
 import CustomButton from "../../../../components/button/CustomButton";
 
-const Actions = () => {
+const Actions = (props: any) => {
+
+    const {title, data, subtitle} = props
     const [podaci, setPodaci] = useState([{name:"", due: "", price:""}]);
 
     useEffect(() => {
@@ -18,8 +20,8 @@ const Actions = () => {
     return (
         <Card>
             <div>
-                <h5>Actions</h5>
-                <h6>Approve payments</h6>
+                <h5>{title}</h5>
+                <h6>{subtitle}</h6>
                 <div>
                     {podaci.map((item: any) => {
                        return(

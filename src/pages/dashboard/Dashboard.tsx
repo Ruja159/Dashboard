@@ -49,7 +49,7 @@ const Dashboard: React.FC = () =>{
                     <CustomCard custom = { <TotalBalanceChart />} isCollapsable = {true}/>
                 </div>
             </div>
-            <Sidebar />
+            <Sidebar dashboard = {true} />
         </>
     )
 }

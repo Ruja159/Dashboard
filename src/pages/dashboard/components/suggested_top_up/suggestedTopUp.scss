@@ -1,0 +1,25 @@
+.suggested-top {
+  display: flex;
+  justify-content: space-between;
+
+  .arrow-button-container {
+    display: flex;
+    gap: 10px;
+
+    .ri-arrow {
+      border-radius: 50%;
+      background: green;
+      width: 24px;
+      height: 24px;
+    }
+
+    .positive-value {
+      background: #1cc91c;
+    }
+
+    .negative-value {
+      background: red;
+      transform: rotate(180deg);
+    }
+  }
+}
