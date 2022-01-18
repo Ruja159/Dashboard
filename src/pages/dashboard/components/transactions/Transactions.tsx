@@ -5,32 +5,82 @@ import Search from "../../../../components/search/Search";
 import CustomButton from "../../../../components/button/CustomButton";
 import CustomDropdown from "../../../../components/dropdown/CustomDropdown";
 
+const colorColumn = (title: string) => {
+    if(title == "traveling"){
+        return "red"
+    }
+    if(title == "uber"){
+        return "green"
+    }
+    if(title == "adobe inc"){
+        return "yellow"
+    }
+    if(title == "mpesa"){
+        return "purple"
+    }
+}
 const columns = [
     {
         title: 'Category',
         dataIndex: 'category',
+        key: 'category',
+        width: "23%",
+        render: (category: any) => (
+            <div className = "category-container">
+                <div className = "line" style = {{background: colorColumn(category.title)}} ></div>
+                <img src={category.icon} alt="" className = "category-image"/>
+                <div className = "title-subtitle">
+                    <div className = "category-title">{category.title}</div>
+                    <div className = "category-subtitle">{category.subtitle}</div>
+                </div>
+            </div>
+        )
     },  {
         title: 'Counter Party',
-        dataIndex: 'counter_party',
+        key: 'profile',
+        dataIndex: 'profile',
+        render: (profile: any )=> (
+            <div className = "counter-party-container">
+                <img src={profile.image} alt="" className = "counter-party-image"/>
+                <div>
+                    {profile.counter_party}
+                </div>
+             </div>
+        ),
     },  {
         title: 'Date',
         dataIndex: 'date',
+        key: 'date'
     },{
         title: 'Time',
-        dataIndex: 'time'
+        dataIndex: 'time',
+        key: 'key'
     },  {
         title: 'Payment type',
         dataIndex: 'payment_type',
+        key: 'payment_type'
     },  {
         title: 'Amount',
         dataIndex: 'amount',
+        key: 'amount',
+        render: (amount: any) =>
+            (
+                <div style={{color: amount < 0 ? "red" : "green"}}> {amount}</div>
+            )
     },
 ];
 
 interface DataType {
     key: React.Key,
-    category: string,
-    counter_party: string,
+    category: {
+        title: string,
+        subtitle: string,
+        icon: string
+    },
+    profile: {
+        counter_party: string,
+        image: string
+    },
     date: string,
     payment_type: string,
     amount: number
@@ -43,8 +93,8 @@ const rowSelection = {
         console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
     },
     getCheckboxProps: (record: DataType) => ({
-        disabled: record.counter_party === 'Disabled User', // Column configuration not to be checked
-        name: record.counter_party,
+        disabled: record.profile.counter_party === 'Disabled User', // Column configuration not to be checked
+        name: record.profile.counter_party,
     }),
 };
 
@@ -53,8 +103,15 @@ const Transactions = () => {
 
     const [data, setData] = useState([{
         key: "",
-        category: "",
-        counter_party: "",
+        category: {
+            title: "",
+            subtitle: "",
+            icon: ""
+        },
+        profile: {
+            counter_party: "",
+            image: ""
+        },
         date: "",
         time: "",
         payment_type: "",
@@ -71,8 +128,15 @@ const Transactions = () => {
       const updatedData = jsonData.map((item) => {
           return {
               key: item.key,
-              category: item.category,
-              counter_party: item.counter_party,
+              category: {
+                  title: item.category.title,
+                  subtitle: item.category.subtitle,
+                  icon: item.category.image
+              },
+              profile: {
+                  counter_party: item.profile.counter_party,
+                  image: item.profile.image
+              },
               date: new Date(item.date).toLocaleDateString(),
               time: new Date(item.date).toLocaleString('en-US', { hour: 'numeric',minute: 'numeric',  hour12: true }),
               payment_type: item.payment_type,

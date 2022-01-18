@@ -70,3 +70,51 @@ dropdown-toggle.btn.btn-primary {
   }
 }
 
+.counter-party-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .counter-party-image {
+    border-radius: 100px;
+    width: 32px;
+    height: auto;
+  }
+}
+
+.category-container{
+  display: flex;
+  //justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  .line {
+    /* width: 10px; */
+    height: 30px;
+    border: 3px solid transparent;
+    border-radius: 10px
+  }
+
+  .category-image {
+    border-radius: 100px;
+    width: 32px;
+    height: auto;
+  }
+
+  .title-subtitle {
+    display: flex;
+    flex-direction: column;
+
+    .category-title {
+      font-weight: bold;
+      text-transform: capitalize;
+      font-size: 14px
+    }
+    .category-subtitle {
+      font-size: 11px;
+      text-transform: capitalize;
+      color: gray;
+    }
+  }
+}
+
