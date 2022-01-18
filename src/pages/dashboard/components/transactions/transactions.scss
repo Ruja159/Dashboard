@@ -1,0 +1,72 @@
+.transactions-container {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+
+  h6 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+.transactions {
+  margin-top: 10px;
+}
+
+.search-transaction {
+  flex: 1;
+  max-width: 400px;
+  input {
+    background: $background-color;
+    font-size: 11px;
+  }
+}
+
+
+.button-search-container-transactions{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  gap: 20px;
+  align-items:center;
+}
+
+.buttons-group{
+  display: flex;
+  gap: 10px;
+
+  button {
+    margin: 0
+  }
+}
+
+dropdown-toggle.btn.btn-primary {
+  font-size: 10px !important;
+}
+
+.ant-table.ant-table-fixed-header {
+  height: 477px !important;
+}
+
+.links-table {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 15px;
+  padding: 10px;
+
+  .link {
+    color: black;
+    border-right: 1px solid $gray-color;
+    padding: 0 15px 0 0;
+
+    &:nth-child(4) {
+      border-right: none;
+    }
+
+    &.active {
+      color: $primary-color;
+    }
+  }
+}
+

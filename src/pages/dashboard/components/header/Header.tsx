@@ -5,12 +5,13 @@ import Search from "../../../../components/search/Search";
 
 
 
-const Header = () => {
+const Header = (props: any) => {
+    const{title, subtitle} = props
     return (
         <div className='header'>
             <div className="title">
-                <h2>Dashboard</h2>
-                <h5>Overview</h5>
+                <h2>{title}</h2>
+                <h5 style={{color: "#adadad", fontSize: "18px"}}>{subtitle}</h5>
             </div>
 
             <div className="search">

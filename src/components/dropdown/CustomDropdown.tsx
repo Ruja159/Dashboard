@@ -6,17 +6,18 @@ interface Props {
     title: string,
     item: any,
     height: string,
-    width: string
+    width: string,
+    font_size?: string
 }
 
 
-const DropDown: React.FC<Props> = ({title, item, height,width}) => {
+const DropDown: React.FC<Props> = ({title, item, height,width,font_size}) => {
     console.log(item)
     return (
         <div>
             <Dropdown>
                 <Dropdown.Toggle
-                    style={{height: height, width: width}}>
+                    style={{height: height, width: width, fontSize:font_size}}>
                     {title}
                 </Dropdown.Toggle>
                     <Dropdown.Menu>

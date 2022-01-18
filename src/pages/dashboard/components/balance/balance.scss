@@ -1,0 +1,39 @@
+.bank-wallet-card {
+  border-radius: 5px;
+  background: red;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  padding: 1px 10px;
+  color: white;
+  font-size: 11px;
+  font-weight: 650;
+}
+.bank-color {
+  background: #6bd5ab;
+  color: white;
+}
+.wallet-color {
+  background: #ff8e18;
+  color: white;
+}
+
+.card-color {
+   background: #8203f1;
+   color: white;
+ }
+
+
+.cash {
+  border-right: 1px solid $gray-color;
+  padding: 0px 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.balance-containcer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 6px;
+  align-items: center;
+}

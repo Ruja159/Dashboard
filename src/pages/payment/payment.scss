@@ -1,0 +1,35 @@
+.payment-container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  padding: 20px;
+  flex-direction: column;
+  background: $background-color;
+  gap: 15px
+}
+
+.button-search-container {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+
+  .search {
+    max-width: 300px;
+  }
+}
+
+.payment-button-search {
+  display: flex;
+  align-items: center;
+}
+.custom-button-group {
+  display: flex;
+  gap: 10px;
+  margin-left: 13px;
+  align-items: center;
+
+  button {
+    margin: 0
+  }
+}

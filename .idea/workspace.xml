@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f1eaa8b-2812-4c9b-bf37-a199cc6caaa2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/search/custom-search.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsonData/balanceData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsonData/paymentActions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsonData/transactions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/balance/Balance.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/balance/balance.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/payment_actions/PaymentActions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/payment_actions/paymentActions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/transactions/Transactions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/components/transactions/transactions.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dropdown/CustomDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/CustomDropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/Search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/payment/Payment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/payment/Payment.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/payment/payment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/payment/payment.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +71,9 @@
       <workItem from="1640528450066" duration="14072000" />
       <workItem from="1641805113972" duration="20309000" />
       <workItem from="1641975813437" duration="42440000" />
-      <workItem from="1642089589744" duration="14566000" />
+      <workItem from="1642089589744" duration="16155000" />
+      <workItem from="1642171585578" duration="15000" />
+      <workItem from="1642175800697" duration="34267000" />
     </task>
     <servers />
   </component>
@@ -73,5 +91,17 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/dashboard/components/transactions/Transactions.tsx</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

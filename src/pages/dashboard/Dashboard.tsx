@@ -20,7 +20,7 @@ const Dashboard: React.FC = () =>{
     return (
         <>
             <div className="dashboard">
-                <Header />
+                <Header title="Dashboard" subtitle="Overview"/>
                 <div className = "button-group">
                     <DropDown title = "Mpesa Acc" height="45px" width="200px" item={["item1", "item2", "item3"]} />
                     <CustomDatePicker />
