@@ -3,10 +3,10 @@ import {BsSearch} from "react-icons/bs";
 
 const Search = (props: any) => {
 
-    const{size, placeholder} = props
+    const{size, placeholder,onKeyUp} = props
     return (
         <>
-            <Input size={size} placeholder={placeholder} prefix={<BsSearch />} className = "custom-search" />
+            <Input size={size} placeholder={placeholder} prefix={<BsSearch />} onKeyUp = {onKeyUp} className = "custom-search" />
         </>
     )
 }

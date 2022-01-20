@@ -39,6 +39,7 @@ const columns = [
         title: 'Counter Party',
         key: 'profile',
         dataIndex: 'profile',
+        width: "17%",
         render: (profile: any )=> (
             <div className = "counter-party-container">
                 <img src={profile.image} alt="" className = "counter-party-image"/>
@@ -100,7 +101,8 @@ const rowSelection = {
 
 const Transactions = () => {
     const [selectionType, setSelectionType] = useState<'checkbox'>('checkbox');
-
+    let tempArray: number[] = [];
+    let response: any = [];
     const [data, setData] = useState([{
         key: "",
         category: {
@@ -117,7 +119,6 @@ const Transactions = () => {
         payment_type: "",
         amount: 0
     }]);
-
     const [isActiveClass, setIsActiveClass] = useState("allTransactions")
 
     const handleLink = (value: string) => {
@@ -146,7 +147,55 @@ const Transactions = () => {
         setData(updatedData)
     }, []);
 
+   // const handleKeyUp = (e: any) => {
+   //     const result: any[] = [];
+   //    data.map((item: any) => {
+   //        for (const prop in item) {
+   //            if(typeof item[prop] !== "object"){
+   //                console.log(item[prop], "PROPS")
+   //                // console.log(item[prop].indexOf(e.target.value), "TARGET VALUE")
+   //                if(item[prop].indexOf(e.target.value) !== -1 && !result.find(res => res.key == item.key)){
+   //                    result.push(item)
+   //                }
+   //            }
+   //            console.log(item[prop])
+   //            if(typeof item[prop] === "object") {
+   //                for (const obj_prop in item[prop]) {
+   //                  if(item[prop][obj_prop].indexOf(e.target.value) !== -1 && !result.find(res => res.key == item.key)){
+   //                      result.push(item)
+   //                  }
+   //                }
+   //            }
+   //        }
+   //        setData(result)
+   //    });
+   // }
 
+    let dataCopy = JSON.parse(JSON.stringify(data))
+
+    const handleKeyUp = (e: any) => {
+        data.map((item:any, index: number) => {
+            recursive(item, index ,e)
+        });
+        setData(response);
+        tempArray = [];
+        response = [];
+    }
+
+    const recursive = (item: any, index: number, e: any) => {
+        const keys = Object.keys(item);
+        keys.forEach((key: any) => {
+            if (typeof item[key] == 'object') {
+                recursive(item[key], index, e)
+            } else {
+                if(!tempArray.includes(index) && item[key].toString().includes(e.target.value)) {
+                    response.push(data[index]);
+                    tempArray.push(index);
+                }
+            }
+
+        })
+    }
     return (
         <div className="transactions">
             <div className ="links-table">
@@ -175,7 +224,7 @@ const Transactions = () => {
                         </div>
                         <div className="button-search-container-transactions">
                             <div className="search-transaction">
-                                <Search size="large" placeholder = "Search by user, card name ,payment type ,date, time"/>
+                                <Search size="large" placeholder = "Search by user, card name ,payment type ,date, time" onKeyUp = {handleKeyUp}/>
                             </div>
                             <div className="buttons-group">
                                 <CustomButton height="40px" onClick={()=> {}} radius="10px" width="100px" children = "Pay All"/>
