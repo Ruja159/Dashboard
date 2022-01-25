@@ -1,10 +1,10 @@
-import jsonData from '../../../../jsonData/paymentActions.json'
+import jsonData from '../../../../../src/jsonData/paymentActions.json'
 import {useEffect, useState} from "react";
 
 
 const PaymentActions = () => {
 
-    const [data, setData] = useState([{icon: '', text: ""}]);
+    const [data, setData] = useState([{id: 0, icon: '', text: ""}]);
 
     useEffect(() => {
        setData((jsonData))
@@ -16,7 +16,7 @@ const PaymentActions = () => {
                 <div className = "payment-actions-container">
                     {data.map((item) => {
                         return (
-                            <div className = "payment-action">
+                            <div className = "payment-action" key ={item.id}>
                                 <img src={item.icon} alt="" className = "payment-icons"/>
                                 <div className = "payment-text">{item.text}</div>
                             </div>

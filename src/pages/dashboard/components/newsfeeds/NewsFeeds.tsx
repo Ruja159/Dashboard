@@ -1,4 +1,4 @@
-import jsonData from '../../../../jsonData/newsFeeds.json'
+import jsonData from '../../../../../src/jsonData/newsFeeds.json'
 import {useEffect, useState} from "react";
 import {Card} from "antd";
 import {IoNotificationsCircle} from "react-icons/io5";

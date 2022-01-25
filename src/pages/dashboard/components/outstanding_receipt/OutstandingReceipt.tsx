@@ -1,4 +1,4 @@
-import jsonData from '../../../../jsonData/outstandingReceipt.json'
+import jsonData from '../../../../../src/jsonData/outstandingReceipt.json'
 import {useEffect, useState} from "react";
 import {Card} from "antd";
 import {Button} from "react-bootstrap";

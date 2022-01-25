@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Card} from "antd";
-import jsonData from '../../../../jsonData/pendingActions.json'
+import jsonData from '../../../../../src/jsonData/pendingActions.json'
 import {RiArrowUpSLine} from "react-icons/ri";
 
 const SuggestedTopUp: React.FC = () => {

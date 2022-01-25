@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "name": "John's salary",
+    "due": "today",
+    "price": "6,50000"
+  },
+  {
+    "id": 2,
+    "name": "John's salary",
+    "due": "today",
+    "price": "6,50000"
+  },
+  {
+    "id": 3,
+    "name": "John's salary",
+    "due": "today",
+    "price": "6,50000"
+  },
+  {
+    "id": 4,
+    "name": "John's salary",
+    "due": "today",
+    "price": "6,50000"}
+]

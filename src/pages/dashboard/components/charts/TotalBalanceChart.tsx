@@ -1,6 +1,6 @@
 import React from "react";
 import { Chart } from "react-google-charts";
-import data from '../../../../jsonData/totalBalanceData.json'
+import data from '../../../../../src/jsonData/totalBalanceData.json'
 
 export const options = {
     title: "Total Balance",

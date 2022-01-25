@@ -12,7 +12,6 @@ interface Props {
 
 
 const DropDown: React.FC<Props> = ({title, item, height,width,font_size}) => {
-    console.log(item)
     return (
         <div>
             <Dropdown>

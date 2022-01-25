@@ -1,6 +1,6 @@
 import React from "react";
 import { Chart } from "react-google-charts";
-import data from '../../../../jsonData/incomeSpentData.json'
+import data from '../../../../../src/jsonData/incomeSpentData.json'
 
 export const options = {
     chart: {
