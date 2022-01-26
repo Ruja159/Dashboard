@@ -14,15 +14,6 @@ const initialState: ProfileState = {
     profilePicture: ""
 };
 
-
-
-// export const addProfileStateAsync = createAsyncThunk(
-//     'profile/add_profile',
-//     async (): Promise<any> => {
-//         const response = await
-//         return response;
-//     },
-// );
 export const getProfileAsync = createAsyncThunk<ProfileState>(
     'profile/fetchProfile',
     async (): Promise<ProfileState> => getProfile(),

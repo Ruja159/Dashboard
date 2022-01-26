@@ -5,7 +5,7 @@ import {Button} from "react-bootstrap";
 
 const OutstandingReceipt = () => {
 
-    const [data, setData] = useState([{img:"" , profile_name: "", status: ""}])
+    const [data, setData] = useState([{id: 0, img:"" , profile_name: "", status: ""}])
 
     useEffect(()=>{
         getData();
@@ -22,7 +22,7 @@ const OutstandingReceipt = () => {
                 <div className="container-list">
                     {data.map((item: any) => {
                         return (
-                            <div>
+                            <div key = {item.id}>
                                 <div className="profile-name">
                                     <div className="profile-name-container">
                                         <img src={item.img} className="img"/>

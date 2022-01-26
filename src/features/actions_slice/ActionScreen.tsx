@@ -14,10 +14,11 @@ const ActionsScreen = (props: any) => {
 
     const {title,subtitle} = props
 
-
-    useEffect(() => {
-        dispatch(getActionsAsync())
-    }, [dispatch]);
+        useEffect(() => {
+            if(!value.length){
+                dispatch(getActionsAsync())
+            }
+        }, []);
 
 
     return (

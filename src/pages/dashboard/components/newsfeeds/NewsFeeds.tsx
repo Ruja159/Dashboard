@@ -5,7 +5,7 @@ import {IoNotificationsCircle} from "react-icons/io5";
 
 const NewsFeeds = () => {
 
-    const [data, setData] = useState([{feed: ""}])
+    const [data, setData] = useState([{id: 0 ,feed: ""}])
 
     useEffect(() => {
         getDatas()
@@ -21,7 +21,7 @@ const NewsFeeds = () => {
                <h6>What's New</h6>
                {data.map((item: any)=> {
                    return(
-                       <div className="feeds-container">
+                       <div className="feeds-container" key={item.id}>
                            <div>
                                <IoNotificationsCircle />
                            </div>

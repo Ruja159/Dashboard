@@ -2,39 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f1eaa8b-2812-4c9b-bf37-a199cc6caaa2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/jsonData/actionsData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jsonData/profileData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jsonData/transactions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/configuration/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/configuration/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/actions_slice/ActionScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/actions_slice/ActionsSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/profile_slice/ProfileScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/profile_slice/profileSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/transaction_slice/TransactionScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/transaction_slice/TranslactionSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/ActionsService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/ProfileService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/TransactionService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jsonData/paymentActions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/payment_actions/PaymentActions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/payment_actions/paymentActionsSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/PaymentActionService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/CustomDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/CustomDropdown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jsonData/balanceData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsonData/balanceData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jsonData/paymentActions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsonData/paymentActions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jsonData/profileData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsonData/profileData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/actions/Actions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/actions/Actions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/balance/Balance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/balance/Balance.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/charts/IncomeSpentChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/charts/IncomeSpentChart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/charts/TotalBalanceChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/charts/TotalBalanceChart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/actions_slice/ActionScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/actions_slice/ActionScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/profile_slice/profileSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/profile_slice/profileSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/transaction_slice/TranslactionSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/transaction_slice/TranslactionSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jsonData/newsFeeds.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsonData/newsFeeds.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jsonData/outstandingReceipt.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsonData/outstandingReceipt.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/newsfeeds/NewsFeeds.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/newsfeeds/NewsFeeds.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/outstanding_receipt/OutstandingReceipt.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/outstanding_receipt/OutstandingReceipt.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/payment_actions/PaymentActions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/payment_actions/PaymentActions.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/profile/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/suggested_top_up/SuggestedTopUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/suggested_top_up/SuggestedTopUp.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/transactions/Transactions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/transactions/Transactions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/components/transactions/transactions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/components/transactions/transactions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/TransactionService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TransactionService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +84,8 @@
       <workItem from="1642667069141" duration="1307000" />
       <workItem from="1642755429023" duration="10687000" />
       <workItem from="1642981947956" duration="36533000" />
-      <workItem from="1643123792282" duration="3420000" />
+      <workItem from="1643123792282" duration="3637000" />
+      <workItem from="1643187134411" duration="7010000" />
     </task>
     <servers />
   </component>

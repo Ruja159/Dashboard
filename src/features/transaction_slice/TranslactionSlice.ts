@@ -40,7 +40,6 @@ export const transactionSlice = createSlice({
         builder
             .addCase(getAsyncTransactions.pending, ((state => {console.log("Pending transactions")})))
             .addCase(getAsyncTransactions.fulfilled, (((state, action: PayloadAction<any>) => {
-                console.log(action.payload, "TRANSACTION PATLOAD")
                action.payload.map((item: any) => {
                            const updatedData = {
                                key: item.key,
